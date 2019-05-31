@@ -1,0 +1,139 @@
+.newsWrapper {
+    padding-top: 60px;
+}
+
+.newsEach {
+    background-color: #f6f6ef;
+    padding: 15px;
+}
+
+.newsEach > h3 {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.newsEach:not(:last-child) {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.newsInfoUl {
+    padding: 0;
+    margin: 0;
+}
+
+.newsInfoEach {
+    display: inline-block;
+    font-size: 10px;
+    color: #696969;
+    cursor: pointer;
+}
+
+.newsInfoEach:hover {
+    text-decoration: underline;
+}
+
+.newsInfoEach:not(:last-child) {
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px solid #cfcfcf;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #f6f6ef;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.pageEach {
+    list-style-type: none;
+    padding: 5px 10px;
+    border: 1px solid #9d9d9d;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.pageEach:not(:last-child) {
+    margin-right: 10px;
+}
+
+.onThisPage {
+    border: 1px solid #ff742b !important;
+    color: #ff742b;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footerEach {
+    font-size: 13px;
+    white-space: nowrap;
+    position: relative;
+    list-style-type: none;
+    cursor: pointer;
+    color: #000000;
+    transition: color 0.15s ease-in-out;
+}
+
+.footerEach:hover {
+    color: #477DCA;
+    transition: color 0.15s ease-in-out;
+}
+
+.footerEach:not(:last-child) {
+    margin-right: 25px;
+}
+
+.footerEach > span {
+    width: 5px;
+    height: 5px;
+    background-color: #000000;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.loadingWrapper {
+    position: relative;
+    height: calc(100vh - 60px - 67px - 16px);
+    background-color: #f6f6ef;
+}
+
+.loadingBar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loadingAni {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: loading;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes loading {
+    0% {width: 0px; height: 0px}
+    50% {width: 500px; height: 500px}
+    100% {width: 0px; height: 0px;}
+}

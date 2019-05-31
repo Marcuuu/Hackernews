@@ -1,0 +1,89 @@
+.headerWrapper {
+    width: 80%;
+    height: 60px;
+    background-color: #ff742b;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 1200px) {
+    .headerWrapper {
+        width: 100%;
+    }
+}
+
+.logoWrapper {
+    display: flex;
+    margin: auto 50px auto 12px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 30px;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    margin-right: 20px;
+}
+
+.logoText {
+    color: #ffffff;
+}
+
+.search {
+    margin: auto 0 auto 0;
+    width: calc(90% - 230px);
+    position: relative;
+}
+
+.searchInput {
+    border: 0;
+    outline: none;
+    width: calc(100% - 100px);
+    height: 42px;
+    padding: 0 20px 0 45px;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.searchInput::placeholder {
+    color: #cacaca;
+}
+
+.searchIcon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 9px;
+    left: 9px;
+    background-image: url("../img/searchIcon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.searchText {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.searchText > svg {
+    vertical-align: bottom;
+}
+
+.searchSettings {
+    margin: auto 20px auto auto;
+}
+
+.searchSettings > svg {
+    stroke: #ffffff;
+    stroke-width: 2px;
+    fill: transparent;
+}
