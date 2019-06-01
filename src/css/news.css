@@ -7,12 +7,15 @@
     padding: 15px;
 }
 
-.newsEach > h3 {
+.webTitle {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 .newsEach:not(:last-child) {
@@ -41,6 +44,11 @@
     border-right: 1px solid #cfcfcf;
 }
 
+.newsInfoEach > a {
+    color: #696969;
+    text-decoration: none;
+}
+
 .pagination {
     display: flex;
     justify-content: center;
@@ -56,6 +64,7 @@
     border: 1px solid #9d9d9d;
     border-radius: 5px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .pageEach:not(:last-child) {

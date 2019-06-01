@@ -56,6 +56,14 @@
     color: #cacaca;
 }
 
+.searchResultsWrapper {
+    position: absolute;
+    width: calc(100% - 100px);
+    background-color: #ffffff;
+    border-top: 1px solid #eeeeee;
+    padding: 10px;
+}
+
 .searchIcon {
     position: absolute;
     width: 25px;

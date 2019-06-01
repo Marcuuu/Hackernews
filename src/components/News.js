@@ -24,20 +24,19 @@ class News extends React.Component {
                     news: data.response.results,
                     loading: false
                 })
-                console.log(this.state.pages.length)
             })
     }
 
     renderNews() {
         return this.state.news.map((item, i) => (
             <div key={i} className="newsEach">
-                <h3>{item.webTitle}</h3>
+                <a href={item.webUrl} target="_blank" className="webTitle">{item.webTitle}</a>
                 <ul className="newsInfoUl">
                     <li className="newsInfoEach">{item.type}</li>
                     <li className="newsInfoEach">{item.sectionName}</li>
                     <li className="newsInfoEach">{item.pillarName}</li>
                     <li className="newsInfoEach">{item.webPublicationDate}</li>
-                    <li className="newsInfoEach">({item.webUrl})</li>
+                    <li className="newsInfoEach"><a href={item.webUrl} target="_blank">({item.webUrl})</a></li>
                 </ul>
             </div>
         ))
